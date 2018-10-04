@@ -1,4 +1,4 @@
-int x = 150;
+//int x = 150;
 Walker[] bob; 
  void setup()   
  {     
@@ -21,10 +21,11 @@ Walker[] bob;
    bob[i].show();
    bob[i].walk();
    }
+   
  }     
  class Walker
  {
-   int myX,myY;
+   int myX,myY; 
    Walker()
    {
     myX = myY = 300;
@@ -32,7 +33,7 @@ Walker[] bob;
  
  void walk()
  {
-  // myX = myX + (int)(Math.random()*8-3);
+  // myX = myX + (int)(Math.random()*8)-3;
   // myY = myY + (int)(Math.random()*8)-3;
  }
  void show()
@@ -45,8 +46,12 @@ Walker[] bob;
    fill(255,0,0);
    ellipse(myX,myY,10,10);
    if(mouseX > myX)
-     myX = myX + (int)(Math.random()*11)-5;
+     myX = myX + (int)(Math.random()*11)-2; 
    else
-     myY = myY + (int)(Math.random()*11)-5;
+     myX = myX + (int)(Math.random()*11)-9;
+   if(mouseY > myY)
+     myY = myY + (int)(Math.random()*11)-2;
+   else
+     myY = myY + (int)(Math.random()*11)-9;
  }
  }
