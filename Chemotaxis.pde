@@ -13,7 +13,7 @@ Walker[] bob;
  void draw()   
  {    
    
-   background(252,245,105);
+   background(49,255,60);
    fill(18,77,44);
    triangle(500,500,100,500,300,50);
    for(int i = 0; i < bob.length; i++)
